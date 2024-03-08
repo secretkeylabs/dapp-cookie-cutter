@@ -26,7 +26,7 @@ const SendStx = ({ network }: Props) => {
       alert("User cancelled the request");
     } else {
       console.error(response.error);
-      alert("Error sending BTC. See console for details.");
+      alert("Error sending STX. See console for details.");
     }
   };
 
