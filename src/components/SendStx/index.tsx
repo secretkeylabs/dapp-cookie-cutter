@@ -24,7 +24,7 @@ const SendStx = ({ network }: Props) => {
       <div>
         <input
           type="number"
-          placeholder="Amount"
+          placeholder="Amount in uSTX"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
         />

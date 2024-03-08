@@ -67,10 +67,7 @@ function App() {
     <div className="App">
       <div className="App-body">
         <NetworkSelector network={network} />
-        <AddressDisplay addresses={addressInfo} />
-        <div>
-          <button onClick={onDisconnect}>Disconnect</button>
-        </div>
+        <AddressDisplay addresses={addressInfo} onDisconnect={onDisconnect} />
         <SendStx network={network} />
         <SendBtc network={network} />
       </div>
