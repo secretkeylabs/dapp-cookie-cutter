@@ -6,7 +6,7 @@ The dapp is built in typescript with Create-React-App.
 
 # Useful Links
 - [sats-connect source code](https://github.com/secretkeylabs/sats-connect)
-- [sats-connect documentation](https://docs.xverse.app/sats-connect/)
+- [sats-connect v2.0.0 documentation](https://docs.xverse.app/sats-connect-wallet-api-for-bitcoin-and-stacks)
 - [xverse-web-extension-RC v0.31.0](https://github.com/secretkeylabs/xverse-web-extension/pull/809)
 - [xverse-web-extension](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg)
 
