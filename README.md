@@ -4,8 +4,14 @@ This is a simple example of how to use the sats-connect library to build a dapp.
 
 The dapp is built in typescript with Create-React-App.
 
+# Useful Links
+- [sats-connect source code](https://github.com/secretkeylabs/sats-connect)
+- [sats-connect documentation](https://docs.xverse.app/sats-connect/)
+- [xverse-web-extension-RC v0.31.0](https://github.com/secretkeylabs/xverse-web-extension/pull/809)
+- [xverse-web-extension](https://chromewebstore.google.com/detail/xverse-wallet/idnnbdplmphpflfnlkomgpfbpcgelopg)
+
 # Prerequisites
-This dapp uses an RC version of sats-connect and requires that an RC version of Xverse wallet is installed.
+This dapp uses an RC version of sats-connect, which implements the [WBIP standard](https://webbtc.netlify.app/wbips/WBIP000), and requires that an RC version of Xverse wallet is installed.
 
 To install the RC version of Xverse wallet, follow the below instructions:
 - Download the latest release candidate from the [RC v0.31.0](https://github.com/secretkeylabs/xverse-web-extension/pull/809) page. The link is in the comment at the top of the page under `Release candidate`. Download the `xverse-web-extension.v0.31.0-rc.X.zip` file.
@@ -30,7 +36,7 @@ npm start
 The dapp should now be reachable in your browser on http://localhost:3001
 
 # Using sats-connect
-Sats-connect allows you to interact with the Xverse wallet from your dapp. The library exposes a `request` function which you can use to send requests to the Xverse wallet. The `request` function takes a `method` and `params` as arguments. The `method` is the name of the method you want to call in the Xverse wallet and the `params` is an object with the parameters typed specifically for the method.
+[Sats-connect](https://github.com/secretkeylabs/sats-connect) is an open source library which allows you to interact with the Xverse wallet from your dapp. The library exposes a `request` function which you can use to send requests to the Xverse wallet. The `request` function takes a `method` and `params` as arguments. The `method` is the name of the method you want to call in the Xverse wallet and the `params` is an object with the parameters typed specifically for the method.
 
 If using typescript, the methods are typed and will come up in the intellisense of your IDE. Once you have typed a specific method, the params will be typed according to that method and will also come up in the intellisense.
 

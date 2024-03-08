@@ -42,22 +42,22 @@ const SendBtc = ({ network }: Props) => {
       <h3>Send BTC</h3>
       {!txnId && (
         <>
-          <div>
+          <p>
+            <div>Amount (sats)</div>
             <input
               type="number"
-              placeholder="Amount in sats"
               value={amount}
               onChange={(e) => setAmount(e.target.value)}
             />
-          </div>
-          <div>
+          </p>
+          <p>
+            <div>Address</div>
             <input
               type="text"
-              placeholder="Address"
               value={address}
               onChange={(e) => setAddress(e.target.value)}
             />
-          </div>
+          </p>
           <button onClick={onClick} disabled={!amount || !address}>
             Send
           </button>

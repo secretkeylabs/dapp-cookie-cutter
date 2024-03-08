@@ -55,6 +55,7 @@ function App() {
     return (
       <div className="App">
         <header className="App-header">
+          <img className="logo" src="/sats-connect.svg" alt="SatsConnect" />
           <NetworkSelector network={network} setNetwork={setNetwork} />
           <p>Click the button to connect your wallet</p>
           <button onClick={onConnect}>Connect</button>
@@ -66,8 +67,14 @@ function App() {
   return (
     <div className="App">
       <div className="App-body">
-        <NetworkSelector network={network} />
-        <AddressDisplay addresses={addressInfo} onDisconnect={onDisconnect} />
+        <div>
+          <img className="logo" src="/sats-connect.svg" alt="SatsConnect" />
+        </div>
+        <AddressDisplay
+          network={network}
+          addresses={addressInfo}
+          onDisconnect={onDisconnect}
+        />
         <SendStx network={network} />
         <SendBtc network={network} />
       </div>

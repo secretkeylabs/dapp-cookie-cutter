@@ -2,13 +2,11 @@ import { BitcoinNetworkType } from "sats-connect";
 
 type Props = {
   network: BitcoinNetworkType;
-  setNetwork?: (newNetwork: BitcoinNetworkType) => void;
+  setNetwork: (newNetwork: BitcoinNetworkType) => void;
 };
 
 const NetworkSelector = ({ network, setNetwork }: Props) => {
   const onNetworkChange = () => {
-    if (!setNetwork) return;
-
     const newNetwork =
       network === BitcoinNetworkType.Mainnet
         ? BitcoinNetworkType.Testnet
@@ -18,11 +16,11 @@ const NetworkSelector = ({ network, setNetwork }: Props) => {
 
   return (
     <div>
-      <div>Network: {network}</div>
+      <p>
+        Network: <span className="action">{network}</span>
+      </p>
       <div className="networkSelectorButton">
-        {setNetwork && (
-          <button onClick={onNetworkChange}>Change Network</button>
-        )}
+        <button onClick={onNetworkChange}>Change Network</button>
       </div>
     </div>
   );
